@@ -1,0 +1,217 @@
+#color {
+    background-color: #212529
+}
+
+h1{
+    color:darkgrey;
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration:blink;
+
+}
+
+h2{
+    color:grey;
+    font-family:Oxygen, Ubuntu, Cantarell;
+    font-size: 20px;
+
+}
+
+h3{
+    color:rgb(156, 110, 189);
+    font-family:Ubuntu, Cantarell;
+    font-size: 20px;
+
+}
+
+p{
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: justify;
+    margin-right: 150px;
+    margin-left: 50px;
+    
+}
+
+table{
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between }
+
+/* esto es un class, SE PUEDE APLICAR A MULTIPLES ELEMENTOS*/
+.menu{
+    background-color:rgb(173, 164, 164);
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+ul.horizontal {
+    display: flex;
+    flex-direction: row; /*row  (horizontal)o column(disposición verticla)*/
+    list-style: none;
+    flex-wrap: wrap;
+
+    
+    }
+
+ul.footer {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+      }
+
+
+
+.bordesRedondeados{
+    border-radius: 20px;
+}
+
+.imgChica{
+    width: 20%;
+}
+
+/* selector ID*/
+#uno{
+    background-color: rgb(179, 219, 206);
+    width: 200px;
+    height: 200px;
+    overflow: hidden; /*lo que sale del margen no me lo muertres*/
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    /*margin:100px va para todos los margenes. Top, left, etc*/
+    padding: 20px 30px 40px 10px; /*top right bottom left*/
+    border: dotted 5px blue;
+    display: block;
+ }
+ 
+#dos{ 
+    background-color: rgb(255, 254, 254);
+}
+
+
+/*list-style*/
+
+.clases{
+   list-style-image: url(https://mdn.mozillademos.org/files/11981/starsolid.gif);
+ }
+ 
+ /*color de fondo*/
+
+
+
+  #div1{
+    display: flex;
+    height: 70vh;
+    background-color: rgb(250, 250, 250);
+    /*flex-flow: column wrap; metodo abreviado de lo que esta abajo*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img{
+    width: 150px;
+    margin: 10px;
+    flex-grow: 0;
+}
+
+body {
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%); 
+    color: black;
+    font-family: sans-serif;
+  }
+  
+  /* On screens that are 992px wide or less, the background color is blue */
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+      color: white;
+      font-family: serif;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+      color: white;
+      font-family: monospace;
+    }
+  }
+
+  /* GRID por AREAS */
+.border {
+    border: solid 1px #000;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "cabeza  cabeza  cabeza"
+    "menu menu menu"
+    "productos  productos publicidad"
+    "servicios   servicios publicidad"
+    "pie    pie             publicidad";
+    
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    
+    /* huecos en grid*/
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+
+}
+
+footer {
+    grid-area: pie;
+    background-color:#212529;
+    color: whitesmoke;
+}
+
+section#productos {
+    grid-area: productos;
+}
+section#servicios {
+    grid-area: servicios;
+}
+nav {
+    grid-area: menu;
+}
+aside {
+    grid-area: publicidad;
+}
+
+
+/*animacion*/
+
+section#efectazo{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: black;
+    animation-name: efectazo;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+/*linea de tiempo*/
+
+@keyframes efectazo {
+    /*origen de la animación*/
+    0%{ width: 200px}
+
+    30%{ width: 500px;}
+    60%{ width: 300px;}
+    80%{width: 800px;}
+
+    /*final de la animacion*/ 
+    100%{ width: 200px; background-color: teal;}
+} 

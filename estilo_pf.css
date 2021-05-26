@@ -1,0 +1,80 @@
+@import"responsive_pf";
+
+body {font-family: 'Roboto', sans-serif;}
+
+.fondo{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(https://source.unsplash.com/LAaSoL0LrYs/1920x1080);
+}
+
+
+
+.griss{
+    background:#343a40d5;
+}
+
+.show{
+    background:#343a40dc;
+}
+
+
+
+.barrarrss{
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.menucolor{
+     color:#e4e5e6;
+     text-decoration: none;
+}
+
+.carousel-m {
+    height:auto;
+  }
+
+#servicios {
+    background-color: whitesmoke;
+    padding: 50px 0px 30px 0px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#ehteams{
+   background-color: cornsilk;
+   padding: 50px 0px 300px 0px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+
+    
+}
+
+#clientes {
+    background-color: rgb(22, 21, 21);
+    padding: 50px 0px 30px 0px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#contacto {
+    background-color: whitesmoke;
+    padding: 50px 0px 30px 0px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#footer {
+    background-color:#343a40d5;
+    padding: 50px 0px 10px 0px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    color:#e4e5e6;
+    text-decoration:#e4e5e6 ;
+}
